@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title></title>
 
-    <style>
-    
-    h1 {
-        background: url(flowershop.jpg);
-        filter: "50%";
-        color: whitesmoke;
-        font-size: 60px;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 720px;
+</head>
+
+<style>
+    .container {
+        background-image: url(flowershop.jpg);
+        filter: brightness(0.2)
+        width: 1250px;
+        Height: 720px;
         display: flex;
         justify-content: center;
-        align-items: center
+        align-items: center;
     }
 
-    .wrapper1{
-    display: flex;
-    justify-content: space-around;
-    width: 700px;
+    .container h1 {
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 40px;
+    
+
+    }
+
+    .container button {
+        background-color: lightgreen;
+        margin-left: 70px;
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        font-family: helvetica;
+        border-color: black;
+        border-radius: 240px;   
+    }
+
+
+
+    .wrapper1 {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        width: 1265px;
+        background-color: lightgreen;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .wrapper2 {
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        width: 1265px;
+        background-color: lightgreen
+    }
+
+
+
+button {
     margin-left: 200px;
-    }
-    
-    .wrapper2{
-    display: flex;
-    justify-content: space-around;
-    width: 700px;
-    margin-left: 200px;
-    }
-
-    h2 {
-    display:flex;
-    justify-content: center;
-    }
+}
 
     
-    }
 
-    .clicker{
-    float: center;
+    .clicker {
+        float: center;
     }
-    
-    </style>
-    <body>
+</style>
+
+<body>
+
 
     <img src="logo.png">
 
-    <div id="banner"> 
-    <div><h1>Beautiful Flowers</h1> </div>    
-    
-    </div>
+    <div >
+        <div class="container">
+            <div>
+            <div>
+                <h1>Beautiful Flowers</h1>
+            </div>
+            <div>
+                <button><b>Learn more</b></button> 
+            </div>
+        </div>
+        </div>
+        <div>
 
-    <div><h2>Learn more</h2></div>
+            <div class="wrapper1">
+                <img src="flower-icon.png">
+                <p> Flowers for every <br> kind of situation </p>
 
-    <div> 
-    
+                <img src="payment-icon.png">
+                <p>All major payments <br> kinds accepted</p>
+            </div>
 
-<div class="wrapper1">
-    <img src="flower-icon.png">
-    <p> Flowers for every <br> kind of situation  </p>
+            <div class="wrapper2">
+                <img src="phone-icon.png">
+                <p>Free Consultation </p>
 
-    <img src="payment-icon.png">
-    <p>All major payments <br> kinds accepted</p>
-</div>
+                <img src="truck-icon.png">
+                <p>City Wide delivery</p>
 
-<div class="wrapper2">
-    <img src="phone-icon.png">
-    <p>Free Consultation </p>
+            </div>
 
-    <img src="truck-icon.png">
-    <p>City Wide delivery</p>
 
-</div>
+</body>
 
-    
-    </body>
 </html>
