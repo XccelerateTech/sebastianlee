@@ -20,6 +20,7 @@ So the output should look something like this:
 function loop () {
 for (var i = 1; i < 31; i ++)
 
+
 if (((i%3) == 0) && ((i%5) == 0)) console.log ('hong kong');
     else if((i%3) == 0){
          console.log('hong');

@@ -41,7 +41,7 @@
 // seconds per day = 86400
 
 // total seconds of earth per year = 86400 * 365.25 = 31557600
-// total seconds of planet per year = 86400 * (365.25 * orbital_period) = a
+// total seconds of planet per year = 86400 * (365.25 * orbital_period)
 
 // var answer = a 
 
