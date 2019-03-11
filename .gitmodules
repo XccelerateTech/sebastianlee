@@ -1,0 +1,3 @@
+[submodule "web/day6/project"]
+	path = web/day6/project
+	url = git@github.com:XccelerateTech/project.git
