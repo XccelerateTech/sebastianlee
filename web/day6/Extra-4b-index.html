@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- Latest compiled and minified Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Popper: Use for pop up bubble -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: helvetica;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+
+
+
+        .banner {
+            background-image: url("macbook-desk.jpg");
+            filter: brightness(80%); 
+            width: 100%;
+            Height: 775px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+        .banner h1 {
+            color: white;
+    
+            font-size: 40px;
+        }
+
+        .banner p {
+            font-size: 20px;
+        }
+
+        .more-info {
+            background-color: orange;
+            padding: 10% 10%;
+            text-align: center;
+
+        }
+
+        .more-info h2 {
+            color: white;
+            text-align: center
+        }
+
+        .more-info p {
+            color: rgb(241, 234, 234)
+        }
+
+        .more-info a {}
+
+        .four-icons {
+            text-align: center;
+        }
+
+        .four-icons h2 {
+            text-align: center;
+            padding: 5% 5%;
+        }
+
+        .four-icons i {
+            color: orange;
+            font-size: 5rem;
+            padding-bottom: 5%;
+            class: animated infinite bounce;
+            
+        }
+
+        .four-icons p {
+            color: grey
+        }
+
+        .four-pictures {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+        .nopadding {
+            padding: 0 0 0 0
+        }
+
+        .four-pictures .hint {
+            opacity: 0;
+            transition: opacity 0.5s;
+            background: rgba(243, 84, 48, 0.9);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .four-pictures .hint:hover {
+            opacity: 1;
+        }
+
+        .four-pictures .hint span.word {
+            display: block;
+            font-size: 1.5rem;
+            color: white;
+            text-transform: capitalize;
+        }
+
+
+
+        .nearly-end {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10% 10%;
+        }
+
+        .nearly-end h2 {
+            color: white;
+            font-weight: 500;
+        }
+
+        .nearly-end {
+            color: black;
+            border-radius: 50%;
+        }
+
+        .contact-information {
+            text-align: center;
+            padding: 10% 10%;
+            color: rgba(0, 0, 0, 0.685);
+        }
+
+        .container-fluid {}
+
+        .container-fluid i {
+            text-align: center;
+            margin-left: 10%;
+            font-size: 5rem;
+
+        }
+
+
+
+        .contact {
+            text-align: center;
+            padding: 10% 10%;
+        }
+
+        .bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 1.5s infinite linear;
+  -o-animation: bounce 1.5s infinite linear;
+  -webkit-animation: bounce 1.5s infinite linear;
+  animation: bounce 1.5s infinite linear;
+  color:000;
+}
+
+.jello {
+  display: inline-block;
+  position: relative;
+  -moz-animation: jello 1.5s infinite linear;
+  -o-animation: jello 1.5s infinite linear;
+  -webkit-animation: jello 1.5s infinite linear;
+  animation: jello 1.5s infinite linear;
+  color:000;
+}
+
+.fadeInUp {
+    display: inline-block;
+  position: relative;
+  -moz-animation: fadeInUp 1.5s infinite linear;
+  -o-animation: fadeInUp 1.5s infinite linear;
+  -webkit-animation: fadeInUp 1.5s infinite linear;
+  animation: fadeInUp 1.5s infinite linear;
+  animation-iteration-count: infinite;
+  color:000;
+}
+
+    .heartBeat {
+        animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+    }
+
+    .swing {
+        display: inline-block;
+  position: relative;
+  -moz-animation: swing 0.25s infinite linear;
+  -o-animation: swing 0.25s infinite linear;
+  -webkit-animation: swing 0.25s infinite linear;
+  animation: swing 0.25s infinite linear; 
+    }
+
+    .hinge {
+        animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+    } 
+    
+    </style>
+
+
+
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banner">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#four-icons">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#four pictures">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact info">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <section class="banner" id="banner">
+            <div>
+                <h1> HEY LOOK, IT'S EVERY </h1>
+                <h1>BOOTSTRAP WEBSITE EVER</h1>
+            </div>
+            <div>
+                <p> <strong>Take a look around at the same freakin bootstrap page you've seen ten million times before!
+                    </strong></p>
+            </div>
+            <p>Featuring all the same things as those pages!</p>
+            <div>
+                <div> <button type="button" class="btn btn-outline-info">
+                        THIS BUTTON MAKES THE PAGE SCROLL </button>
+                </div>
+        </section>
+
+        <section class="more-info">
+            <h2> Want to make an original website yourself?</h2>
+            <p> Forget that! Who would ever want to put in all of that effort for a website? Just open up your web
+                browser
+                and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your
+                way!
+                There are hundreds of templates to choose from, but go ahead and pick this same exact template from the
+                first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+            <a target="_blank" href="http://lmgtfy.com/?q=bootstrap+template" button type="button"
+                class="btn btn-light">Google that shit</a>
+
+        </section>
+
+        <section class="four-icons" id="four-icons">
+            <h2> So much originality</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <i class="fas fa-globe-europe jello" ></i>
+                        <h4> This freakin template</h4>
+                        <p> Guaranteed to use the same template that every other bootstrap website uses, downloaded
+                            straight from The Web™</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <i class="fas fa-pizza-slice fadeInUp"></i>
+                        <h4> this set of four icons</h4>
+                        <p> Guaranteed to use the same template that every other bootstrap website uses, downloaded
+                            straight from The Web™</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <i class="fas fa-thumbs-up bounce"></i>
+                        <h4> Lots of effort</h4>
+                        <p> Guaranteed to use the same template that every other bootstrap website uses, downloaded
+                            straight from The Web™</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <i class="fas fa-fire-alt heartBeat"></i>
+                        <h4> Made with love</h4>
+                        <p> Guaranteed to use the same template that every other bootstrap website uses, downloaded
+                            straight from The Web™</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="four-pictures" id="four pictures">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+
+                    <div class="col-lg-3 col-md-6 nopadding">
+                        <img src="img1.jpg" class="img-fluid" alt="RIP">
+                        <div class="hint">first thing <span class="word">look</span></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 nopadding">
+                        <img src="img2.jpg" class="img-fluid" alt="RIP">
+                        <div class="hint">second thing <span class="word">over</span></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 nopadding">
+                        <img src="img3.jpg" class="img-fluid" alt="RIP">
+                        <div class="hint">third thing <span class="word">here</span></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 nopadding">
+                        <img src="img4.jpg" class="img-fluid" alt="RIP">
+                        <div class="hint">fourth thing <span class="word">please</span></div>
+                    </div>
+
+        </section>
+
+        <section class="nearly-end">
+            <div>
+                <h2> Seriously, it's this freakin template</h2>
+            </div>
+            <div><a href="https://getbootstrap.com/docs/4.0/components/button-group/" button type="button"
+                    class="btn btn-lg">That's
+                    amazing</a> </div>
+
+        </section>
+
+        <div class="contact-information" id="contact info">
+
+            <h2> My Contact Information</h2>
+            <p>Here's my phone number and email address, because hey that's part of the template and why would you not
+                include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come
+                pouring in
+                from all the companies wanting my insane website design skills.</p>
+            <p>Honestly this template does look really nice, though.</p>
+        </div>
+
+        <footer></footer>
+
+
+        <div class="container-fluid contacts">
+            <div class="row align-items-center">
+                <div class="col-md-3 ml-md-auto">
+                    <i class="fas fa-phone swing"></i>
+                    <p>+1-676-420-9455</p>
+                </div>
+                <div class="col-md-3 ml-md-auto">
+                    <i class="far fa-envelope hinge"></i>
+                    <p><a href="mailto:holy@stuff.com">holy@stuff.com</a></p>
+
+                </div>
+
+            </div </div>

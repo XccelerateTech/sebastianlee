@@ -1,11 +1,13 @@
+// B 
+
 // Write a function that receives a number and returns it in an array with the digits in reverse order.
 
 // reverse(12345) // [5,4,3,2,1]
-// HINT: Consider converting the number into a string then use a for loop to manipulate each letter. Useful method - toString() and Number().
-
-
-//Q1
-
-var reverse [1,2,3,4,5]
-function reverse (1,2,3,4,5) {
-
+ HINT: Consider converting the number into a string then use a for loop to manipulate each letter. Useful method - toString() and Number().
+ //
+  * 
+ Write a function that takes one input - the input is a number, maybe use toString()
+ then you will need to make a loop or use the split() method which makes a new array
+ reverse() method for arrays
+ then return the array 
+ */

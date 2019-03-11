@@ -1,4 +1,4 @@
-var asia = {
+/*var asia = {
     countries: {
         India: {
             Mumbai: {
@@ -91,3 +91,5 @@ array.push(familyBankValues.familyMembers["Step Brother"]["account number"])
 array.push(familyBankValues.familyMembers["Step Brother"]["accountBalance"])
 // (familyBankValues.familyMembers["Step Brother"].account) = "hehehaha";
 console.log(array);
+
+
