@@ -9,7 +9,7 @@ class Person {
     }
 
     set Age(age) {
-        this.age = age;
+        this.age = age;   
     }
       get Weight() {
         console.log( `I am ${this.weight} kg.`)

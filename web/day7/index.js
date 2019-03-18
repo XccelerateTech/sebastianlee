@@ -77,7 +77,7 @@ class Car {
     }
 
     drive() {
-        console.log('vroom at ' + this.speed);
+        console.log('vroom at ' + this.speed);  //now this.speed does not exist for now
     }
 
     stop () {
@@ -85,6 +85,14 @@ class Car {
     }
 }
 
-const car = new Car({ type: 'pickup', speed: 9000, seatingCapacity: 6, color: 'red'});
+const car = new Car({ type: 'pickup', speed: 9000, seatingCapacity: 6, color: 'red'}); 
 car.stop() // 'vroom'
 console.log(car.type); // 'pickup'
+
+
+
+
+// class Pet{
+//     constructor(options)
+//     this.name = 
+// }
